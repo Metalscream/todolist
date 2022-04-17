@@ -7,8 +7,8 @@ function App() {
 
   return (
     <div>
-      <ToDoList list={toDoList} />
       <Button onClick={addItem}>Добавить</Button>
+      <ToDoList list={toDoList} />
     </div>
   );
 }

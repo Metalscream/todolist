@@ -1,7 +1,7 @@
 export enum ToDoStatus {
-    TODO = "todo",
-    DOING = "doing",
-    DONE = "done",
+    TODO = 'todo',
+    DOING = 'doing',
+    DONE = 'done',
 }
 
 export interface IToDoItem {
@@ -12,6 +12,6 @@ export interface IToDoItem {
     status: ToDoStatus;
 }
 
-export interface IToDoItemProps extends Omit<IToDoItem, "id">{
-
+export interface IToDoItemProps extends IToDoItem {
+    className?: string;
 }
