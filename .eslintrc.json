@@ -27,6 +27,7 @@
     ],
     "ignorePatterns": ["*.gql", "src/apollo-types.ts"],
     "rules": {
+        "linebreak-style": "off",
         "no-use-before-define": "off",
         "camelcase": "off",
         "no-shadow": "off",
