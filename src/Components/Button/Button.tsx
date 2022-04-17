@@ -1,4 +1,5 @@
 import { ReactChild } from 'react';
+import styles from './Button.module.scss';
 
 interface IButtonProps {
   children: ReactChild;
@@ -7,6 +8,6 @@ interface IButtonProps {
 
 export function Button({ children, onClick }: IButtonProps) {
   return (
-    <div onClick={onClick}>{children}</div>
+    <div className={styles.root} onClick={onClick}>{children}</div>
   );
 }
